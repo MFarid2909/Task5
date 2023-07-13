@@ -1,0 +1,43 @@
+
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the number");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the number");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the number");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the number");
+            int p = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the number");
+            int r = Convert.ToInt32(Console.ReadLine());
+            field(a, b, c, r, p);
+        }
+        static void field(int a, int b)
+        {
+            int S = 0;
+            S = a * b;
+            ConsoleWriteLine($"Duzbucaqlinin sahesi{S}");
+        }
+        static void field(int a, int b, int c)
+        {
+            int S = 0;
+            S = 2 * (a * b + b * c + a * c);
+            ConsoleWriteLine($"Duzbucali paralelepipedin tam sethinin sahesi{S}");
+        }
+
+        static void field(int a, int b, int p, int r, int c)
+        {
+            int S = 0;
+
+            p = ((a + b + c) / 2);
+            S = p * r;
+            ConsoleWriteLine($"Uchbucaq daxilinde cevrenin sahesi{S}");
+        }
+    }
+}
